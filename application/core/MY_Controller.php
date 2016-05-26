@@ -17,7 +17,7 @@ class MY_Controller extends CI_Controller
         $this->load->model('common/prefs_model');
 
         /* Data */
-        $this->data['lang']           = element($this->config->item('language'), $this->config->item('language_abbr'));
+        $this->data['lang']           = $this->config->item('spanish', 'language_abbr');
         $this->data['charset']        = $this->config->item('charset');
         $this->data['frameworks_dir'] = $this->config->item('frameworks_dir');
         $this->data['plugins_dir']    = $this->config->item('plugins_dir');
